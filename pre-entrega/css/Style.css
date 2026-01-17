@@ -1,0 +1,121 @@
+/* 1. ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4; /* Un gris muy claro para el fondo general */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+/* 2. HEADER Y NAVEGACIÓN (Fuerte y Elegante) */
+header {
+    background-color: #0d1b2a; /* Azul muy oscuro del logo para dar fuerza */
+    padding: 10px 40px;
+    border-bottom: 4px solid #00a8cc; /* Línea celeste vibrante */
+    overflow: hidden; 
+}
+
+/* Achicamos el logo y lo mantenemos a la izquierda */
+.logo-img {
+    width: 150px; /* Tamaño ideal para que no invada */
+    height: auto;
+    float: left;
+}
+
+header h2 {
+    color: #ffffff; /* Blanco puro para que destaque sobre el fondo oscuro */
+    font-weight: 300; /* Finito como "SONORA" para que sea elegante */
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+.header nav {
+    float: right;
+    margin-top: 25px; /* Ajuste para alinear con el centro del logo */
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Letras blancas para que resalten sobre el azul oscuro */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+header nav ul li a:hover {
+    color: #00a8cc; /* El celeste del logo al pasar el mouse */
+}
+
+/* 3. MAIN Y PRODUCTOS */
+main {
+    padding: 40px 20px;
+}
+
+.ficha-producto {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* 4. FOOTER (Fuerte y Profesional) */
+footer {
+    background-color: #1b263b; /* Otro tono de azul oscuro fuerte */
+    color: #ffffff;
+    padding: 50px 40px;
+    border-top: 5px solid #00a8cc;
+    margin-top: 60px;
+}
+
+footer h4 {
+    color: #00a8cc; /* Títulos del footer en celeste */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #cbd5e0; /* Gris clarito para los links del footer */
+}
+
+footer ul li a:hover {
+    color: #ffffff;
+}
+
+/* UBICACIÓN */
+.ubicacion {
+    text-align: right;
+}
+
+.ubicacion address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+iframe {
+    width: 350px;
+    height: 250px;
+    border: 2px solid #00a8cc;
+    border-radius: 10px;
+}
