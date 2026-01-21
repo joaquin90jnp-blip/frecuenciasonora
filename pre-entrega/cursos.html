@@ -7,71 +7,87 @@
     <link rel="stylesheet" href="./css/Style.css">
 </head>
 <body>
+<header>
+    <a href="index.html"><img src="./img/frecuenciasonora.png" class="logo-img" alt="Logo"></a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="preguntas-frecuentes.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+   
+<main>
+    <section class="academia">
+        <h1>Nuestros Cursos y Talleres</h1>
+        <p class="introduccion">Aprendé con profesionales en clases individuales o grupales.</p>
 
-    <header>
-        <h1><img src="./img/frecuenciasonora.png" alt="Logo de Frecuencia Sonora"></h1>
-        <h2>Nuestros Cursos</h2>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="./preguntas frecuentes.html">Preguntas frecuentes</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h2>Aprendé con los mejores</h2>
-        
-        <section class="contenedor-cursos">
-            
+        <div class="grid-cursos">
             <article class="curso-card">
-                <img src="../img/curso-guitarra.jpg" alt="Clase de guitarra eléctrica">
-                <h3>Guitarra Eléctrica</h3>
-                <p>Nivel inicial y avanzado. Aprendé técnica, escalas y tus canciones favoritas.</p>
-                <span class="duracion">Duración: 4 meses</span>
-                <a href="#" class="btn-info">Más info</a>
+                <img src="./img/cursoguitarra.png" alt="Clases de Guitarra">
+                <h3>Guitarra</h3>
+                <p>Eléctrica, acústica y criolla. Todos los niveles.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
             </article>
 
             <article class="curso-card">
-                <img src="../img/curso-teclado.jpg" alt="Clase de piano y teclado">
-                <h3>Piano y Teclado</h3>
-                <p>Desde teoría musical básica hasta composición contemporánea.</p>
-                <span class="duracion">Duración: 6 meses</span>
-                <a href="#" class="btn-info">Más info</a>
+                <img src="./img/cursodeteclado.png" alt="Clases de Teclado">
+                <h3>Teclado y Piano</h3>
+                <p>Técnica, armonía y repertorio popular.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
             </article>
 
             <article class="curso-card">
-                <img src="../img/curso-audio.jpg" alt="Clase de producción musical">
-                <h3>Producción Musical</h3>
-                <p>Aprendé a usar programas de grabación y mezcla profesional.</p>
-                <span class="duracion">Duración: 3 meses</span>
-                <a href="#" class="btn-info">Más info</a>
+                <img src="./img/cursodebateria.png" alt="Clases de Batería">
+                <h3>Batería</h3>
+                <p>Ritmo, coordinación y rudimentos esenciales.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
             </article>
 
-        </section>
-    </main>
+            <article class="curso-card">
+                <img src="./img/cursodesaxofon.png" alt="Clases de Saxofón">
+                <h3>Saxofón</h3>
+                <p>Embocadura, respiración y fraseo de Jazz y Blues.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
+            </article>
 
-    <footer>
-        <section class="redes">
-            <h4>Seguinos en nuestras redes</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://www.x.com" target="_blank">X</a></li>
-            </ul>
-        </section>
+            <article class="curso-card">
+                <img src="./img/cursodearmonica.png" alt="Clases de Armónica">
+                <h3>Armónica</h3>
+                <p>Técnicas de soplado, aspirado y bending.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
+            </article>
 
-        <section class="ubicacion">
-            <h4>Nos ubicamos en:</h4>
-            <address>AV. juramento 2380, CABA</address>
-            <div class="mapa-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.668193318758!2d-58.45625080000001!3d-34.5619556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d39cbb1adf%3A0x50f33f5d575a2d27!2sAv.%20Juramento%202380%2C%20C1428%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1768664266090!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <article class="curso-card destacado">
+                <img src="./img/cursodereparaciondeinstrumentos.png" alt="Taller de Reparación">
+                <h3>Reparación de Instrumentos</h3>
+                <p>Aprendé mantenimiento básico y calibración profesional.</p>
+                <a href="./contacto.html" class="btn-inscripcion">Consultar</a>
+            </article>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="redes">
+        <h4>Seguinos en nuestras redes</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.x.com" target="_blank">X</a></li>
+        </ul>
+    </section>
+
+    <section class="ubicacion">
+        <h4>Nos ubicamos en:</h4>
+        <address>AV. juramento 2380, CABA</address>
+        <div class="mapa-container">
             </div>
-        </section>
-    </footer>
+    </section>
+</footer>
+    
 
 </body>
 </html>
