@@ -1,13 +1,11 @@
-/* ==========================================
-   1. BASE Y ESTRUCTURA (FIX MARGEN BLANCO)
-   ========================================== */
+/*1. BASE Y ESTRUCTURA (FIX MARGEN BLANCO) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Forzamos a que el cuerpo ocupe toda la pantalla para que el footer no flote */
+
 html, body {
     height: 100%;
 }
@@ -17,17 +15,16 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #333;
     display: flex;
-    flex-direction: column; /* Alineación vertical */
+    flex-direction: column; 
 }
 
-/* El main se estira para empujar al footer al fondo */
+
 main {
     flex: 1;
 }
 
-/* ==========================================
-   2. HEADER (Logo y Navegación)
-   ========================================== */
+/* 
+   2. HEADER (Logo y Navegación) */
 header {
     background-color: #0d1b2a !important;
     display: flex !important;
@@ -38,7 +35,7 @@ header {
     min-height: 80px;
 }
 
-/* Control estricto del tamaño del logo */
+
 header img, 
 .logo-img {
     width: 150px !important;
@@ -68,9 +65,7 @@ nav ul li a:hover {
     color: #00a8cc !important;
 }
 
-/* ==========================================
-   3. SECCIONES (Index, Productos, FAQ)
-   ========================================== */
+/* 3. SECCIONES (Index, Productos, FAQ) */
 
 /* Nosotros / Bienvenida */
 .nosotros-flex {
@@ -92,7 +87,7 @@ nav ul li a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Grillas de Productos y Cursos */
+/* Productos y Cursos */
 .grid-cursos, .grid-categorias {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -127,9 +122,7 @@ img.card-img-top, .curso-card img, .producto-item img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* ==========================================
-   4. FOOTER
-   ========================================== */
+/* 4. FOOTER */
 footer {
     background-color: #0d1b2a !important;
     border-top: 5px solid #00a8cc !important;
@@ -142,26 +135,59 @@ footer {
     width: 100%;
 }
 
-.redes ul {
-    list-style: none;
+
+footer h4::before {
+    content: "🎧 "; 
+    font-size: 0.9em;
 }
 
+.redes ul {
+    list-style: none;
+    padding: 0;
+}
+
+
 .redes ul li a {
+    position: relative;
     color: #00a8cc !important;
     text-decoration: none !important;
     font-weight: bold !important;
+    transition: color 0.3s ease;
 }
 
-.mapa-container iframe {
+.redes ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease; 
+}
+
+
+.redes ul li a:hover::after {
     width: 100%;
-    max-width: 300px;
-    height: 200px;
-    border-radius: 8px;
 }
 
-/* ==========================================
-   5. RESPONSIVE (Móviles)
-   ========================================== */
+.redes ul li a:hover {
+    color: #ffffff !important;
+}
+
+
+.redes ul li:last-child {
+    margin-top: 10px;
+}
+
+
+footer *::selection {
+    background-color: #00a8cc;
+    color: #0d1b2a;
+}
+
+/* 
+   5. RESPONSIVE */
 @media (max-width: 768px) {
     header, .nosotros-flex, footer, .grid-cursos {
         flex-direction: column !important;
