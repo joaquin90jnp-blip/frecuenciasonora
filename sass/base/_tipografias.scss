@@ -1,0 +1,11 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+h1, h2, h3 {
+    font-family: $fuente-titulos;
+    @include brillo-neon($color-principal);
+}
+
+body {
+    font-family: $fuente-cuerpo;
+}

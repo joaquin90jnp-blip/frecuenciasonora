@@ -1,0 +1,23 @@
+@use "variables" as *; 
+
+@mixin efecto-pedal($fondo, $sombra) {
+    background-color: $fondo;
+    box-shadow: 0 6px 0 $sombra;
+    position: relative;
+    top: 0;
+    transition: all 0.1s;
+
+    &:active {
+        top: 4px;
+        box-shadow: 0 2px 0 $sombra;
+    }
+
+    &:hover {
+        background-color: lighten($fondo, 10%);
+    }
+}
+
+@mixin brillo-neon($color) {
+    color: $color;
+    text-shadow: 0 0 10px $color, 0 0 20px $color;
+}

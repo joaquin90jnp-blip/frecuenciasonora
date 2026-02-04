@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+header {
+    background-color: $color-oscuro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px $aire-lateral;
+    border-bottom: $borde-grueso solid $color-principal;
+    
+img,
+    .logo-img {
+        width: 250px;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+        border-radius: 12px;
+        border: 1px solid rgba($color-principal, 0.3);
+        transition: transform 0.3s ease;
+        background-color: transparent;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}

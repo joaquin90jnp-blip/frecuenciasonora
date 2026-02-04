@@ -1,0 +1,128 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+.btn-consultar,
+.btn-custom,
+.btn-enviar {
+    @include efecto-pedal($color-principal, $color-sombra-pedal);
+    display: inline-block;
+    padding: 12px 24px;
+    color: $color-blanco !important;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: $redondeo-pedal;
+    font-family: $fuente-titulos;
+    text-align: center;
+    width: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn-inscripcion {
+    @include efecto-pedal($color-secundario, $color-sombra-naranja);
+    display: inline-block;
+    padding: 12px 25px;
+    color: $color-blanco !important;
+    border-radius: 50px;
+    font-family: $fuente-titulos;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.producto-card,
+.faq-item {
+    background-color: $color-blanco;
+    border-radius: $redondeo-caja;
+    padding: $espacio-bloque;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: $color-oscuro;
+
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(0, 168, 204, 0.2);
+    }
+}
+
+.faq-item {
+    border-left: 5px solid $color-principal;
+    margin-bottom: 15px;
+}
+
+.btn-enviar:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #007a94;
+}
+
+.label-inline {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.label-inline::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+[for="audio"]::before {
+    content: "🎧";
+}
+
+[for="instrumentos"]::before {
+    content: "🎸";
+}
+
+[for="iluminacion"]::before {
+    content: "💡";
+}
+
+input[type="radio"]:checked+.label-inline {
+    color: #00a8cc;
+    font-weight: bold;
+}
+
+input[type="radio"]:checked+.label-inline::before {
+    transform: translateY(-50%) scale(1.3);
+}
+
+.label-inline:hover::before {
+    transform: translateY(-50%) rotate(15deg);
+}
+.nosotros-texto h2 {
+    color: #00a8cc;
+    position: relative;
+    padding-left: 45px; 
+}
+
+.nosotros-texto h2::before {
+    content: "♫";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0d1b2a;
+    font-size: 2rem;
+    animation: bounce 2s infinite; 
+}
+
+.nosotros-texto h2:hover::before {
+    color: #00a8cc;
+}
+
+.producto-card, .faq-item {
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 12px 25px rgba(0, 168, 204, 0.3);
+  }
+}
+

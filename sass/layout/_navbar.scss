@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+
+nav {
+    ul {
+        display: flex;
+        list-style: none;
+        gap: $espacio-bloque; 
+        margin: 0;
+        padding: 0;
+
+        li {
+            a {
+                color: $color-blanco;
+                text-decoration: none;
+                font-weight: bold;
+                font-family: $fuente-titulos;
+                font-size: 13px;
+                text-transform: uppercase;
+                transition: color 0.3s ease, transform 0.3s ease;
+                display: inline-block;
+
+                &:hover {
+                    color: $color-principal; 
+                    transform: translateY(-2px); 
+                }
+            }
+        }
+    }
+}

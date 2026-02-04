@@ -1,0 +1,19 @@
+@use "utilities/variables" as*;
+@use "utilities/mixin" as* ;    
+
+// 2. BASE (Cimientos)
+@use "base/reset";
+@use "base/estilos-generales";
+@use "base/animaciones";
+
+// 3. LAYOUT (Estructura)
+@use "layout/grid";
+@use "layout/header";
+@use "layout/navbar";
+@use "layout/footer";
+
+// 4. COMPONENTS (Objetos)
+@use "components/botons";
+
+// 5. RESPONSIVE
+@use "layout/mediaquires";
